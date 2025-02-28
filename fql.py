@@ -102,7 +102,7 @@ class FQL(nn.Module):
         self.optim_policy.zero_grad()
         policy_loss.backward()
         self.optim_policy.step()
-        return  TensorDict({'policy_loss':policy_loss, 'flow_loss': bc_loss}).detach()
+        return  TensorDict({'policy_loss':policy_loss, 'bc_loss': bc_loss}).detach()
     
     @property
     def total_params(self):
