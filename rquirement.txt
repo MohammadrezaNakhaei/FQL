@@ -1,0 +1,7 @@
+numpy==1.26.4
+torch==2.6.0
+tqdm
+wandb
+tensordict-nightly
+pyrallis
+cython==0.29.27
